@@ -9,6 +9,7 @@ services:
       - '9000:9000'
     volumes:
       - ./code:/var/www/html/whocando
+      - ./docker/php/php.wcd.ini:/usr/local/etc/php/conf.d/php-wcd.ini
 
   nginx:
     container_name: nginx
