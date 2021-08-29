@@ -13,7 +13,6 @@ class HomeController extends AbstractController
      */
     public function index(): Response
     {
-        var_dump(php_ini_loaded_file());
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
         ]);
